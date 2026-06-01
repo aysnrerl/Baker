@@ -151,11 +151,24 @@ Ana sayfa, ziyaretçileri karşılayan hero bölümü, öne çıkan ürünler ve
 <img width="1887" height="873" alt="Image" src="https://github.com/user-attachments/assets/f8cfd6bb-85a9-45d8-8c2c-168509b55e9c" />
 <img width="1877" height="882" alt="Image" src="https://github.com/user-attachments/assets/070ce8b5-ad4e-4a97-9110-7fc678a3696b" />
 
-### Admin Panel — Dashboard
+### 🔐 Admin Panel — Dashboard
+Dashboard, işletmenin genel durumunu tek bakışta sunmak amacıyla tasarlanmış istatistik odaklı bir yönetim ekranıdır. Toplam ürün sayısı, kayıtlı şef sayısı, gelen mesajlar ve aktif aboneler gibi veriler anlık olarak görüntülenmektedir. Tüm yönetim modüllerine sol menü aracılığıyla hızlıca erişilebilir.
+
 <img width="1845" height="884" alt="Image" src="https://github.com/user-attachments/assets/47474661-daef-481d-bb28-5a4a2909ee42" />
 
-### Admin Panel — Ürün Yönetimi
-<!-- ![Admin Ürünler](wwwroot/screenshots/admin-products.png) -->
+### 📦 Admin Panel — Ürün Yönetimi
+
+Ürün yönetimi modülü, fırına ait tüm ürünlerin listelendiği, eklendiği, düzenlendiği ve silinebildiği tam kapsamlı bir CRUD ekranıdır. Her ürün için ad, fiyat, açıklama, görsel URL ve kategori bilgisi ayrı ayrı tanımlanabilmektedir. Kategori bazlı filtreleme özelliği sayesinde çok sayıda ürün arasında hızlı yönetim imkânı sunulmaktadır.
+
+<img width="1388" height="794" alt="Image" src="https://github.com/user-attachments/assets/2711ddd4-d935-4343-ae1c-a1f87efa8987" />
+<img width="1475" height="653" alt="Image" src="https://github.com/user-attachments/assets/6ca7ad8b-8ab3-4efa-b56d-e57bb86846b0" />
+
+### 🗂️ Admin Panel — Kategori Yönetimi
+
+Kategori yönetimi ekranı, ürünlerin gruplandırıldığı kategorilerin oluşturulmasını ve düzenlenmesini sağlamaktadır. Her kategori için ad, açıklama ve ikon bilgisi tanımlanabilmekte; ürün yönetim ekranında bu kategoriler dinamik olarak listelenmektedir. Kategori silme işleminde ilişkili ürünler etkilenmeyecek şekilde kontrol mekanizması kurgulanmıştır.
+
+<img width="1475" height="611" alt="Image" src="https://github.com/user-attachments/assets/8723beb7-0221-440c-9c29-5809d030ed68" />
+<img width="1474" height="471" alt="Image" src="https://github.com/user-attachments/assets/6ea7d55c-4637-4319-825e-3ff750e6c25e" />
 ---
 
 ## 📡 API Endpoints
