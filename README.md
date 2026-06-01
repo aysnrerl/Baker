@@ -137,7 +137,22 @@ Baker/
 │
 └── README.md
 ```
+## 👨‍💻 Kullanıcı Paneli
 
+Aşağıda kullanıcı arayüzüne ait sayfa görüntüleri kategorilere ayrılmış şekilde listelenmiştir.
+
+### Ana Sayfa
+[Ana Sayfa]
+(wwwroot/baker-1.0.0/img/feature.png)
+
+### Ürünler
+<!-- ![Ürünler](wwwroot/screenshots/products.png) -->
+
+### Admin Panel — Dashboard
+<!-- ![Admin Dashboard](wwwroot/screenshots/admin-dashboard.png) -->
+
+### Admin Panel — Ürün Yönetimi
+<!-- ![Admin Ürünler](wwwroot/screenshots/admin-products.png) -->
 ---
 
 ## 📡 API Endpoints
@@ -226,21 +241,7 @@ Visual Studio'da:
 
 ---
 
-## 🖼️ Ekran Görüntüleri
 
-> ℹ️ Aşağıya projenizin ekran görüntülerini ekleyebilirsiniz.
-
-### Ana Sayfa
-<!-- ![Ana Sayfa](wwwroot/screenshots/homepage.png) -->
-
-### Ürünler
-<!-- ![Ürünler](wwwroot/screenshots/products.png) -->
-
-### Admin Panel — Dashboard
-<!-- ![Admin Dashboard](wwwroot/screenshots/admin-dashboard.png) -->
-
-### Admin Panel — Ürün Yönetimi
-<!-- ![Admin Ürünler](wwwroot/screenshots/admin-products.png) -->
 
 ---
 
