@@ -139,7 +139,7 @@ Baker/
 ```
 ## 👨‍💻 Kullanıcı Paneli
 
-Aşağıda kullanıcı arayüzüne ait sayfa görüntüleri kategorilere ayrılmış şekilde listelenmiştir.
+Ana sayfa, ziyaretçileri karşılayan hero bölümü, öne çıkan ürünler ve hizmetlerle birlikte işletmenin genel bir vitrini olarak tasarlanmıştır. Tüm içerikler veritabanından dinamik olarak çekilmekte olup admin panelinden anlık güncellenebilmektedir. Responsive yapısı sayesinde mobil, tablet ve masaüstü cihazlarda kusursuz görüntüleme sunar.
 
 ### Ana Sayfa
 
@@ -148,9 +148,11 @@ Aşağıda kullanıcı arayüzüne ait sayfa görüntüleri kategorilere ayrılm
 <img width="1882" height="877" alt="Image" src="https://github.com/user-attachments/assets/26be38af-8198-4e13-9c15-664b663c5acf" />
 <img width="1886" height="876" alt="Image" src="https://github.com/user-attachments/assets/bdf2b9b4-a811-447f-801c-bd6fad6308a7" />
 <img width="1888" height="873" alt="Image" src="https://github.com/user-attachments/assets/b6a2de6a-45cc-4570-acb7-b3824b0e4e72" />
+<img width="1887" height="873" alt="Image" src="https://github.com/user-attachments/assets/f8cfd6bb-85a9-45d8-8c2c-168509b55e9c" />
+<img width="1877" height="882" alt="Image" src="https://github.com/user-attachments/assets/070ce8b5-ad4e-4a97-9110-7fc678a3696b" />
 
 ### Admin Panel — Dashboard
-<!-- ![Admin Dashboard](wwwroot/screenshots/admin-dashboard.png) -->
+<img width="1845" height="884" alt="Image" src="https://github.com/user-attachments/assets/47474661-daef-481d-bb28-5a4a2909ee42" />
 
 ### Admin Panel — Ürün Yönetimi
 <!-- ![Admin Ürünler](wwwroot/screenshots/admin-products.png) -->
