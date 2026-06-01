@@ -1,0 +1,142 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<style>
+    .dashboard-card {
+        transition: all 0.3s ease-in-out;
+        border: none;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+        .dashboard-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+        }
+
+    .card-icon-bg {
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        font-size: 5rem;
+        opacity: 0.15;
+        color: #fff;
+    }
+
+    .stat-number {
+        font-weight: 700;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+</style>
+
+<div class="content-wrapper">
+    <div class="page-header">
+        <h3 class="page-title">
+            <span class="page-title-icon bg-gradient-primary text-white me-2">
+                <i class="mdi mdi-chart-line"></i>
+            </span> Fırın Yönetim Paneli Raporları
+        </h3>
+        <nav aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">
+                    <span>Anlık Durum</span> <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3 stretch-card grid-margin">
+            <div class="card bg-gradient-danger card-img-holder text-white dashboard-card shadow-sm">
+                <div class="card-body position-relative">
+                    <h5 class="font-weight-normal mb-3">Toplam Ürün Çeşidi</h5>
+                    <h2 class="mb-2 stat-number">@ViewBag.ProductCount</h2>
+                    <p class="card-text small">Aktif menü elemanları</p>
+                    <i class="mdi mdi-food card-icon-bg"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 stretch-card grid-margin">
+            <div class="card bg-gradient-primary card-img-holder text-white dashboard-card shadow-sm">
+                <div class="card-body position-relative">
+                    <h5 class="font-weight-normal mb-3">Kategori Sayısı</h5>
+                    <h2 class="mb-2 stat-number">@ViewBag.CategoryCount</h2>
+                    <p class="card-text small">Ürün gruplandırmaları</p>
+                    <i class="mdi mdi-shape card-icon-bg"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 stretch-card grid-margin">
+            <div class="card bg-gradient-info card-img-holder text-white dashboard-card shadow-sm">
+                <div class="card-body position-relative">
+                    <h5 class="font-weight-normal mb-3">Usta Şeflerimiz</h5>
+                    <h2 class="mb-2 stat-number">@ViewBag.ChefCount</h2>
+                    <p class="card-text small">Mutfaktaki profesyoneller</p>
+                    <i class="mdi mdi-account-multiple card-icon-bg"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 stretch-card grid-margin">
+            <div class="card bg-gradient-success card-img-holder text-white dashboard-card shadow-sm">
+                <div class="card-body position-relative">
+                    <h5 class="font-weight-normal mb-3">Sunulan Hizmetler</h5>
+                    <h2 class="mb-2 stat-number">@ViewBag.ServiceCount</h2>
+                    <p class="card-text small">Özel servis ve hizmet türleri</p>
+                    <i class="mdi mdi-room-service card-icon-bg"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3 stretch-card grid-margin">
+            <div class="card bg-gradient-dark card-img-holder text-white dashboard-card shadow-sm" style="background: linear-gradient(to right, #3a7bd5, #3a6073) !important;">
+                <div class="card-body position-relative">
+                    <h5 class="font-weight-normal mb-3">Galeri Görselleri</h5>
+                    <h2 class="mb-2 stat-number">@ViewBag.GalleryCount</h2>
+                    <p class="card-text small">Sitede sergilenen fotoğraflar</p>
+                    <i class="mdi mdi-image-multiple card-icon-bg"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 stretch-card grid-margin">
+            <div class="card bg-gradient-warning card-img-holder text-white dashboard-card shadow-sm" style="background: linear-gradient(to right, #f12711, #f5af19) !important;">
+                <div class="card-body position-relative">
+                    <h5 class="font-weight-normal mb-3">Müşteri Yorumları</h5>
+                    <h2 class="mb-2 stat-number">@ViewBag.TestimonialCount</h2>
+                    <p class="card-text small">Sistemdeki aktif referanslar</p>
+                    <i class="mdi mdi-comment-quote card-icon-bg"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 stretch-card grid-margin">
+            <div class="card text-white dashboard-card shadow-sm" style="background: linear-gradient(to right, #b92b27, #1565c0) !important;">
+                <div class="card-body position-relative">
+                    <h5 class="font-weight-normal mb-3">Bülten Aboneleri</h5>
+                    <h2 class="mb-2 stat-number">@ViewBag.SubscribeCount</h2>
+                    <p class="card-text small">E-posta listesine kayıtlı kişiler</p>
+                    <i class="mdi mdi-account-check card-icon-bg"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 stretch-card grid-margin">
+            <div class="card bg-gradient-secondary card-img-holder text-white dashboard-card shadow-sm">
+                <div class="card-body position-relative">
+                    <h5 class="font-weight-normal mb-3">İletişim Mesajları</h5>
+                    <h2 class="mb-2 stat-number">@ViewBag.MessageCount</h2>
+                    <p class="card-text small">Cevaplanmayı bekleyen formlar</p>
+                    <i class="mdi mdi-email card-icon-bg"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

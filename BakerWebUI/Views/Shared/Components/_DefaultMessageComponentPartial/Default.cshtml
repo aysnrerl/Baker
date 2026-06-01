@@ -1,0 +1,35 @@
+﻿@model BakerWebUI.Dtos.Messages.CreateMessageDto
+
+<div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+    <form asp-action="SendMessage" asp-controller="AddressInfo" method="post">
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" asp-for="Name" placeholder="Adınız">
+                    <label>Adınız</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="email" class="form-control" asp-for="Email" placeholder="E-posta">
+                    <label>E-posta</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-floating">
+                    <input type="text" class="form-control" asp-for="Subject" placeholder="Konu">
+                    <label>Konu</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-floating">
+                    <textarea class="form-control" asp-for="Content" style="height: 150px" placeholder="Mesajınız"></textarea>
+                    <label>Mesajınız</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Gönder</button>
+            </div>
+        </div>
+    </form>
+</div>

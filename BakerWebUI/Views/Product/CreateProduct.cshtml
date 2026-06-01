@@ -1,0 +1,41 @@
+﻿@model BakerWebUI.Dtos.Products.CreateProductDto
+@{
+    ViewData["Title"] = "Yeni Ürün Ekle";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Yeni Ürün Ekle</h4>
+            <form asp-action="CreateProduct" asp-controller="Product" method="post">
+                <div class="form-group">
+                    <label>Ürün Adı</label>
+                    <input type="text" class="form-control" asp-for="Name">
+                </div>
+                <div class="form-group">
+                    <label>Fiyat</label>
+                    <input type="number" step="0.01" class="form-control" asp-for="Price">
+                </div>
+                <div class="form-group">
+                    <label>Görsel URL</label>
+                    <input type="text" class="form-control" asp-for="ImageUrl">
+                </div>
+                <div class="form-group">
+                    <label>Kategori</label>
+                    <select class="form-control" asp-for="CategoryId">
+                        <option value="">Kategori Seçin</option>
+                        @if (ViewBag.Categories != null)
+                        {
+                            foreach (var cat in (List<BakerWebUI.Dtos.Categories.ResultCategoryDto>)ViewBag.Categories)
+                            {
+                                <option value="@cat.CategoryId">@cat.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Kaydet</button>
+                <a asp-action="ProductList" class="btn btn-light">İptal</a>
+            </form>
+        </div>
+    </div>
+</div>

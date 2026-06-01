@@ -1,0 +1,34 @@
+﻿@model BakerWebUI.Dtos.Testimonials.UpdateTestimonialDto
+@{
+    ViewData["Title"] = "UpdateTestimonial";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Referans Güncelle</h4>
+            <form asp-action="UpdateTestimonial" asp-controller="Testimonial" method="post">
+                <input type="hidden" asp-for="TestimonialId" />
+                <div class="form-group">
+                    <label>Ad</label>
+                    <input type="text" class="form-control" asp-for="Name" placeholder="Ad">
+                </div>
+                <div class="form-group">
+                    <label>Başlık</label>
+                    <input type="text" class="form-control" asp-for="Title" placeholder="Başlık">
+                </div>
+                <div class="form-group">
+                    <label>Açıklama</label>
+                    <textarea class="form-control" asp-for="Description" rows="3" placeholder="Açıklama"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Görsel URL</label>
+                    <input type="text" class="form-control" asp-for="ImageUrl" placeholder="Görsel URL">
+                </div>
+                <button type="submit" class="btn btn-primary mr-2">Güncelle</button>
+                <a asp-action="TestimonialList" class="btn btn-light">İptal</a>
+            </form>
+        </div>
+    </div>
+</div>

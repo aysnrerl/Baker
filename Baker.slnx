@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="BakerWebApi/BakerWebApi.csproj" />
+  <Project Path="BakerWebUI/BakerWebUI.csproj" Id="ba0e1dd8-4f5c-4eb7-8382-2952af37c534" />
+</Solution>

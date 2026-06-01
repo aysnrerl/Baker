@@ -1,0 +1,27 @@
+﻿@model BakerWebUI.Dtos.Galleries.UpdateGalleryDto
+@{
+    ViewData["Title"] = "UpdateGallery";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Galeri Öğesi Güncelle</h4>
+            <form asp-action="UpdateGallery" asp-controller="Gallery" method="post">
+                <input type="hidden" asp-for="GalleryId" />
+                <div class="form-group">
+                    <label>Başlık</label>
+                    <input type="text" class="form-control" asp-for="Title" placeholder="Başlık">
+                </div>
+                <div class="form-group">
+                    <label>Görsel URL</label>
+                    <input type="text" class="form-control" asp-for="ImageUrl" placeholder="Görsel URL">
+                </div>
+                <button type="submit" class="btn btn-primary mr-2">Güncelle</button>
+                <a asp-action="GalleryList" class="btn btn-light">İptal</a>
+            </form>
+        </div>
+    </div>
+</div>
+

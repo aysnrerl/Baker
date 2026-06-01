@@ -1,0 +1,31 @@
+﻿@model BakerWebUI.Dtos.Services.UpdateServiceDto
+@{
+    ViewData["Title"] = "UpdateService";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Hizmet Güncelle</h4>
+            <form asp-action="UpdateService" asp-controller="Service" method="post">
+                <input type="hidden" asp-for="ServiceId" />
+                <div class="form-group">
+                    <label>Başlık</label>
+                    <input type="text" class="form-control" asp-for="Title" placeholder="Başlık">
+                </div>
+                <div class="form-group">
+                    <label>Açıklama</label>
+                    <textarea class="form-control" asp-for="Description" rows="3" placeholder="Açıklama"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>İkon (fa sınıfı)</label>
+                    <input type="text" class="form-control" asp-for="Icon" placeholder="örn: fa-birthday-cake">
+                </div>
+                <button type="submit" class="btn btn-primary mr-2">Güncelle</button>
+                <a asp-action="ServiceList" class="btn btn-light">İptal</a>
+            </form>
+        </div>
+    </div>
+</div>
+

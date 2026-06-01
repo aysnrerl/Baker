@@ -1,0 +1,12 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+@if (ViewBag.NotificationCount != "0")
+{
+    <span class="count-symbol bg-danger"></span>
+    @* İstersen simgenin yanına sayı da yazdırabilirsin: *@
+    @* <span class="badge bg-danger">@ViewBag.NotificationCount</span> *@
+}

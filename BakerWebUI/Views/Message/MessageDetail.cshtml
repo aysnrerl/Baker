@@ -1,0 +1,39 @@
+﻿@model BakerWebUI.Dtos.Messages.ResultMessageDto
+@{
+    ViewData["Title"] = "MessageDetail";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Mesaj Detayı</h4>
+            @if (Model != null)
+            {
+                <div class="form-group">
+                    <label><strong>Gönderen:</strong></label>
+                    <p>@Model.Name</p>
+                </div>
+                <div class="form-group">
+                    <label><strong>E-posta:</strong></label>
+                    <p>@Model.Email</p>
+                </div>
+                <div class="form-group">
+                    <label><strong>Konu:</strong></label>
+                    <p>@Model.Subject</p>
+                </div>
+                <div class="form-group">
+                    <label><strong>Tarih:</strong></label>
+                    <p>@Model.SendDate.ToString("dd.MM.yyyy HH:mm")</p>
+                </div>
+                <div class="form-group">
+                    <label><strong>Mesaj İçeriği:</strong></label>
+                    <p>@Model.Content</p>
+                </div>
+            }
+            <a asp-action="MessageList" class="btn btn-primary">Geri Dön</a>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,56 @@
+﻿@model List<BakerWebUI.Dtos.AddressInfos.ResultAddressInfoDto>
+
+<div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+    <h2 class="mb-4">İletişim Bilgilerimiz</h2>
+    
+    @if (Model != null && Model.Count > 0)
+    {
+        @foreach (var item in Model)
+        {
+            
+            <div class="d-flex align-items-center mb-3">
+                <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 45px; height: 45px;">
+                    <i class="fa fa-map-marker-alt text-white"></i  >
+                </div>
+                <div class="ms-3">
+                    <h5 class="text-primary">Adres</h5>
+                    <p class="mb-0">@item.Address</p>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center mb-3">
+                <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 45px; height: 45px;">
+                    <i class="fa fa-phone-alt text-white"></i>
+                </div>
+                <div class="ms-3">
+                    <h5 class="text-primary">Telefon</h5>
+                    <p class="mb-0">@item.Phone</p>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center mb-3">
+                <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 45px; height: 45px;">
+                    <i class="fa fa-envelope-open text-white"></i>
+                </div>
+                <div class="ms-3">
+                    <h5 class="text-primary">E-posta</h5>
+                    <p class="mb-0">@item.Email</p>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center mb-3">
+                <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 45px; height: 45px;">
+                    <i class="fa fa-clock text-white"></i>
+                </div>
+                <div class="ms-3">
+                    <h5 class="text-primary">Çalışma Saatleri</h5>
+                    <p class="mb-0">@item.OpenHours</p>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <p class="text-danger">Adres bilgileri şu an yüklenemedi. Lütfen API bağlantısını kontrol edin.</p>
+    }
+</div>

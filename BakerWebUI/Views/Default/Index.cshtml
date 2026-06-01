@@ -1,0 +1,64 @@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+@await Component.InvokeAsync("_DefaultHeadComponentPartial")
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    @await Component.InvokeAsync("_DefaultNavBarComponentPartial")
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    @await Component.InvokeAsync("_DefaultFeatureComponentPartial")
+    <!-- Carousel End -->
+
+   
+    <!-- About Start -->
+    @await Component.InvokeAsync("_DefaultAboutComponentPartial")
+    <!-- About End -->
+
+    <!-- Product Start -->
+    @await Component.InvokeAsync("_DefaultProductComponentPartial")
+    <!-- Product End -->
+
+    <!-- Service Start -->
+    @await Component.InvokeAsync("_DefaultServiceComponentPartial")
+    <!-- Service End -->
+
+    <!-- Team Start -->
+    @await Component.InvokeAsync("_DefaultChefComponentPartial")
+    <!-- Team End -->
+
+    <!-- Testimonial Start -->
+    @await Component.InvokeAsync("_DefaultTestimonialComponentPartial")
+    <!-- Testimonial End -->
+
+    <!-- Footer Start -->
+    @await Component.InvokeAsync("_DefaultFooterComponentPartial")
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    @await Component.InvokeAsync("_DefaultScriptComponentPartial")
+</body>
+
+</html>

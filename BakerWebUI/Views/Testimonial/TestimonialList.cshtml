@@ -1,0 +1,46 @@
+﻿@model List<BakerWebUI.Dtos.Testimonials.ResultTestimonialDto>
+@{
+    ViewData["Title"] = "TestimonialList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Referans Listesi</h4>
+            <a asp-action="CreateTestimonial" class="btn btn-primary mb-3">Yeni Referans Ekle</a>
+            <div class="table-responsive">
+                <table class="table table-striped" style="table-layout: fixed; width: 100%;">
+                    <thead>
+                        <tr>
+                            <th style="width: 50px;">#</th>
+                            <th style="width: 120px;">Ad</th>
+                            <th style="width: 130px;">Başlık</th>
+                            <th>Açıklama</th>
+                            <th style="width: 160px;">İşlemler</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model != null)
+                        {
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.TestimonialId</td>
+                                    <td>@item.Name</td>
+                                    <td>@item.Title</td>
+                                    <td style="white-space: normal; word-wrap: break-word;">@item.Description</td>
+                                    <td>
+                                        <a asp-action="DeleteTestimonial" asp-route-id="@item.TestimonialId" class="btn btn-danger btn-sm">Sil</a>
+                                        <a asp-action="UpdateTestimonial" asp-route-id="@item.TestimonialId" class="btn btn-warning btn-sm">Güncelle</a>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+

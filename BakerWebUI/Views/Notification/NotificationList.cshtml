@@ -1,0 +1,55 @@
+﻿@model List<BakerWebUI.Dtos.Notifications.ResultNotificationDto>
+@{
+    ViewData["Title"] = "NotificationList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Bildirimler</h4>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Başlık</th>
+                            <th>Açıklama</th>
+                            <th>Durum</th>
+                            <th>Tarih</th>
+                            <th>İşlemler</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model != null)
+                        {
+                            foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.NotificationId</td>
+                                    <td>@item.Title</td>
+                                    <td>@item.Description</td>
+                                    <td>
+                                        @if (item.IsRead)
+                                        {
+                                            <span class="badge badge-success">Okundu</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge badge-warning">Okunmadı</span>
+                                        }
+                                    </td>
+                                    <td>@item.CreatedDate.ToString("dd.MM.yyyy HH:mm")</td>
+                                    <td>
+                                        <a asp-action="DeleteNotification" asp-controller="Notification" asp-route-id="@item.NotificationId" class="btn btn-danger btn-sm" onclick="return confirm('Silmek istediğinize emin misiniz?')">Sil</a>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
