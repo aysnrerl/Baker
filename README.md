@@ -143,8 +143,11 @@ Aşağıda kullanıcı arayüzüne ait sayfa görüntüleri kategorilere ayrılm
 
 ### Ana Sayfa
 
-< img src="wwwroot/baker-1.0.0/img/feature.png"/>
-
+<img width="1890" height="852" alt="Image" src="https://github.com/user-attachments/assets/921801d7-1022-419a-aba4-b8ecb67673a8" />
+<img width="1878" height="873" alt="Image" src="https://github.com/user-attachments/assets/85e9d5a8-71fa-40f1-9575-625abd558c10" />
+<img width="1882" height="877" alt="Image" src="https://github.com/user-attachments/assets/26be38af-8198-4e13-9c15-664b663c5acf" />
+<img width="1886" height="876" alt="Image" src="https://github.com/user-attachments/assets/bdf2b9b4-a811-447f-801c-bd6fad6308a7" />
+<img width="1888" height="873" alt="Image" src="https://github.com/user-attachments/assets/b6a2de6a-45cc-4570-acb7-b3824b0e4e72" />
 
 ### Admin Panel — Dashboard
 <!-- ![Admin Dashboard](wwwroot/screenshots/admin-dashboard.png) -->
