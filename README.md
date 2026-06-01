@@ -142,11 +142,9 @@ Baker/
 Aşağıda kullanıcı arayüzüne ait sayfa görüntüleri kategorilere ayrılmış şekilde listelenmiştir.
 
 ### Ana Sayfa
-[Ana Sayfa]
-(wwwroot/baker-1.0.0/img/feature.png)
 
-### Ürünler
-<!-- ![Ürünler](wwwroot/screenshots/products.png) -->
+< img src="wwwroot/baker-1.0.0/img/feature.png"/>
+
 
 ### Admin Panel — Dashboard
 <!-- ![Admin Dashboard](wwwroot/screenshots/admin-dashboard.png) -->
