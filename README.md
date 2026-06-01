@@ -144,6 +144,7 @@ Ana sayfa, ziyaretçileri karşılayan hero bölümü, öne çıkan ürünler ve
 ### Ana Sayfa
 
 <img width="1890" height="852" alt="Image" src="https://github.com/user-attachments/assets/921801d7-1022-419a-aba4-b8ecb67673a8" />
+<img width="1887" height="876" alt="Image" src="https://github.com/user-attachments/assets/85fcb3c5-cd47-48a4-97bb-4fc51843ecd6" />
 <img width="1878" height="873" alt="Image" src="https://github.com/user-attachments/assets/85e9d5a8-71fa-40f1-9575-625abd558c10" />
 <img width="1882" height="877" alt="Image" src="https://github.com/user-attachments/assets/26be38af-8198-4e13-9c15-664b663c5acf" />
 <img width="1886" height="876" alt="Image" src="https://github.com/user-attachments/assets/bdf2b9b4-a811-447f-801c-bd6fad6308a7" />
